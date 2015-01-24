@@ -1,0 +1,11 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Este pagina web continene mi portafolio digital.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Bedoya <jfelipebc@outlook.com>",
+  "license": "MIT"
+}
