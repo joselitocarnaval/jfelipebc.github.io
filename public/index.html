@@ -1,212 +1,131 @@
-<!DOCTYPE html>
-<html lang="es"> 
+<!doctype html>
+<html lang="es-ES">
 <head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Juan Felipe Bedoya Cardona</title>
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/portafolio.min.css">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Coloca favicon.ico y apple-touch-icon(s) en el directorio raíz -->
+	<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>-->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="lib/materialize/bin/materialize.css" />
+	<!-- endbower -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<!-- endinject -->
 </head>
-<body>
-	<div class="container">
+	<body>
+		<!--[if lt IE 8]>
+		<p class="browsehappy">
+		Estás usando un navegador <strong>desactualizado</strong>.
+		Por favor <a href="http://browsehappy.com/">actualiza tu navegador</a>
+		Para mejorar la experiencia..
+		</p>
+		<![endif]-->
 		<header class="header">
-			<a href="" id="show-menu" class="display-menu flaticon-menu flaticon-white"></a>
-			<nav class="menu" id="menu">
-				<ul>
-					<li><a href="#education">Educacion</a></li>
-					<li><a href="#experience">Experiencia Laboral</a></li>
-					<li><a href="#skills">Habilidades</a></li>
-					<li><a href="#contact">Contacto</a></li>
-				</ul>
-			</nav>
-			<section class="about" id="about">
-				<figure class="image">
-					<img src="img/image-xs.png" height="200" width="200" alt="Juan Felipe Bedoya Cardona">
-				</figure>
-				<span class="name">
-					<h1>Juan Felipe Bedoya Cardona</h1>
-				</span>
-				<div class="bio">
-					<p>Soy Desarrollador de software, he utilizado tecnologías como Silverlight, C#, LINQ, MS SQL Server, AngularJS, HTML, Javascript y CSS. Recientemente me he interesado por lenguajes como Phyton, Javascript, entre otros.</p>
-				</div>
-			</section>
+			<div class="navbar-wrapper">
+				<nav class="transparent">
+					  <!--Menu Desktop -->
+					  <a  id="menuButton-desktop" href="#" data-activates="dekstop" class="right button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+				      <ul id="dekstop" class="side-nav">
+    					<li><a href="#about">About me</a></li>
+				        <li><a href="#experience">Experience</a></li>
+				        <li><a href="#skills">Skills</a></li>
+				        <li><a href="#education">Education</a></li>
+						<li><a href="#contact">Contact</a></li>
+  					  </ul>
+  	
+   					  <!--Menu Mobile/tablet-->	
+					  <a href="#" data-activates="mobile" class="right button-collapse"><i class="mdi-navigation-menu"></i></a>
+				      <ul class="side-nav" id="mobile">
+				        <li><a href="#about">About me</a></li>
+				        <li><a href="#experience">Experience</a></li>
+				        <li><a href="#skills">Skills</a></li>
+				        <li><a href="#education">Education</a></li>
+						<li><a href="#contact">Contact</a></li>
+				      </ul>
+				</nav>
+			</div>
 		</header>
-		<section class="education" id="education">
-			<div class="title">
-				<span class="flaticon-graduate icon"></span>
-				<h2>Educacion</h2>
-				<hr class="line">
-			</div>
-			<article class="item">
-				<div class="item-info">
-					<h3>Tecnólogia en Sistemas de Información</h3>
-					<p>
-						<strong>Institución Universitaria ITM </strong>2006 - 2009
-					</p>
-				</div>
-			</article>
-			<article class="item">
-				<div class="item-info">
-					<h3>Ingeniería de Sistemas</h3>
-					<p>
-						<strong>Institución Universitaria ITM </strong> Cursando actualmente.
-					</p>
-				</div>
-			</article>
-			<article class="item">
-				<div class="item-info">
-					<h3>Seminario de Innovación</h3>
-					<p>
-						<strong>Ruta N</strong> 2014.
-					</p>
-				</div>
-			</article>
-			<article class="item">
-				<div class="item-info">
-				<!--https://platzi.com/usuarios/jfelipebc/-->
-					<h3>
-						<a href="https://platzi.com/usuarios/jfelipebc/" target="_blank">
-							Curso profesional de Frontend
-						</a>
-					</h3>
-					<p>
-						<strong>Mejorando.la</strong> 2014.
-					</p>
-				</div>
-			</article>
-			<article class="item">
-				<div class="item-info">
-					<h3>
-						<a href="https://platzi.com/usuarios/jfelipebc/" target="_blank">
-							Curso profesional de Git y GitHub
-						</a>
-					</h3>
-					<p>
-						<strong>Mejorando.la</strong> 2015.
-					</p>
-				</div>
-			</article>
-			<article class="item">
-				<div class="item-info">
-					<h3>
-						<a href="https://platzi.com/usuarios/jfelipebc/" target="_blank">
-							Curso de diseño web online
-						</a>
-					</h3>
-					<p>
-						<strong>Mejorando.la</strong> 2015.
-					</p>
-				</div>
-			</article>
-		</section>
-		<section class="experience" id="experience">
-			<div class="title">
-				<span class="flaticon-man icon"></span>
-				<h2>Experiencia Laboral</h2>
-				<hr class="line">
-			</div>
-			<article class="item">
-				<div class="item-info">
-					<h3>Analista Desarrollador de Software</h3>
-					<p class="description">
-						Análisis y desarrollo de aplicaciones web orientadas al sector
-						financiero, utilizando herramientas como Silverlight y Visual
-						Studio 2010 y C#. Migración de aplicaciones a HTML5, CSS3 y
-						Javascript (Usando el framework AngularJS).
-					</p>
-					<p>
-						<strong>Lyntik S.A.S</strong>
-					</p>
-					<p>
-						05 Septiembre 2011 - Actualmente
-					</p>
-				</div>
-			</article>
-			<article class="item">
-				<div class="item-info">
-					<h3>Analista Desarrollador de Software</h3>
-					<p class="description">
-						Desarrollo de aplicaciones web a la medida con base a la arquitectura
-						MVC con C#, soporte de aplicaciones.
-					</p>
-					<p>
-						<strong>IT-Matica S.A.S</strong>
-					</p>
-					<p>
-						24 Mayo 2010 - 02 Septiembre 2011
-					</p>
-				</div>
-			</article>
-		</section>
-		<section class="skills" id="skills">
-			<div class="title">
-				<span class="flaticon-tools icon"></span>
-				<h2>Habilidades</h2>
-				<hr class="line">
-			</div>
-			<span class="chart" data-percent="80">
-					<span class="percent"></span>
-					<span class="canvas-title">Silverlight</span>
-			</span>
-			<span class="chart" data-percent="10">
-					<span class="percent"></span>
-					<span class="canvas-title">ASP.NET</span>
-			</span>
-			<span class="chart" data-percent="30">
-					<span class="percent"></span>
-					<span class="canvas-title">Javascript</span>
-			</span>
-			<span class="chart" data-percent="50">
-					<span class="percent"></span>
-					<span class="canvas-title">AngularJS</span>
-			</span>
-			<span class="chart" data-percent="60">
-					<span class="percent"></span>
-					<span class="canvas-title">HTML</span>
-			</span>
-			<span class="chart" data-percent="30">
-					<span class="percent"></span>
-					<span class="canvas-title">CSS</span>
-			</span>
-			<span class="chart" data-percent="5">
-					<span class="percent"></span>
-					<span class="canvas-title">SQL Server</span>
-			</span> 
-		</section>
-		<section class="contact" id="contact">
-			<div class="contact-info">
-					<div class="phone">
-					<span class="flaticon-smart"></span>
-					<h4>317 668 97 12</h4>
-				</div>
-				<div class="email">
-					<span class="flaticon-close"></span>
-					<h4>
-						jfelipebc@outlook.com
-					</h4>
-				</div>
-				<div class="contact-media">
-					<a class="facebook flaticon-facebook" href="https://www.facebook.com/jfelipebc1" target="_blank">
-					</a>
-					<a class="twitter flaticon-twitter" href="https://www.twitter.com/jfelipebc" target="_blank">
-					</a>
-					<a class="linkedin flaticon-linkedin" href="https://co.linkedin.com/in/jfelipebc" target="_blank">
-					</a>
-				</div>
-			</div>
-			<form id="form-contact" class="form-contact">
-				<h2>Contacto</h2>
-				<input type="text" id="name" placeholder="Nombre"  required>
-				<input type="email" id="email" placeholder="Email" required>
-				<textarea placeholder="Mensaje" id="message" required></textarea>
-				<button type="submit" class="submit">Enviar</button>
-			</form>
-		</section>
-	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-	<script src="js/lib/jquery.easypiechart.js"></script>
-	<script src="js/script.js"></script>
-</body>
+		<div class="parallax-container parallax_marginTop">
+    		<div class="parallax"><img class="parallax_img" src="assets/images/day.jpg"></div>
+  		</div>
+	    <div id="about" class="section white">
+	    	<div class="row container">
+	      		<h2 class="header">About me</h2>
+	      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    		</div>
+	  	</div>
+	  	<div class="parallax-container">
+	    	<div class="parallax"><img src="assets/images/computer1.jpg"></div>
+	  	</div>
+		<div id="experience" class="section white">
+	    	<div class="row container">
+	      		<h2 class="header">Experience</h2>
+	      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    		</div>
+	  	</div>
+		<div id="skills" class="section white">
+	    	<div class="row container">
+	      		<h2 class="header">Skills</h2>
+	      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    		</div>
+	  	</div>
+		<div id="education" class="section white">
+	    	<div class="row container">
+	      		<h2 class="header">Education</h2>
+	      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    		</div>
+	  	</div>
+		<div id="contact" class="section white">
+	    	<div class="row container">
+	      		<h2 class="header">Contact</h2>
+	      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    		</div>
+	  	</div>
+		<footer class="page-footer blue darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+		<!-- bower:js -->
+		<script src="lib/jquery/dist/jquery.js"></script>
+		<script src="lib/materialize/bin/materialize.js"></script>
+		<!-- endbower -->
+		<!-- inject:js -->
+		<script src="scripts/script.js"></script>
+		<!-- endinject -->
+		<script>
+			$(document).on("ready", function(){
+				$('.parallax').parallax();
+				$(".button-collapse").sideNav({
+					//menuWidth: 300, // Default is 240
+      				edge: 'right', // Choose the horizontal origin
+      				closeOnClick: true 
+				});
+			})
+		</script>
+	</body>
 </html>
+

@@ -1,0 +1,23 @@
+{
+  "name": "jfelipebc.github.io",
+  "version": "2.0.0",
+  "homepage": "https://github.com/jfelipebc/jfelipebc.github.io",
+  "authors": [
+    "Juan Bedoya <jfelipebc@outlook.com>"
+  ],
+  "description": "Esta es mi curriculum vitae digital",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "curriculum",
+    "vitae",
+    "desarrollo",
+    "de",
+    "software"
+  ],
+  "license": "BSD",
+  "dependencies": {
+    "materialize": "~0.96.1"
+  }
+}
