@@ -1,12 +1,3 @@
-@import 'normalize.styl'
-
-//colors
-backcolor 	= #CCC
-backcolor2 	= #1E1E1E
-fontcolor 	= #9FA5B3
-itemcolor 	= #00B84E
-orangecolor = #DB6107
-
 //fonts 
 @font-face 
 	font-family "Flaticon"
@@ -21,9 +12,10 @@ orangecolor = #DB6107
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after    
 	font-family Flaticon
-     font-size 20px
+	font-size 20px
 	font-style normal
 	margin-left 20px
+
 .flaticon
 	&-close:before 
 		content "\e000"
@@ -45,15 +37,3 @@ orangecolor = #DB6107
 		content "\e008"
 	&-white
 		color white
-
-
-
-.parallax_img
-	width 25%
-	height 100%
-	
-
-@media screen (min-width: 724px) 
-	.parallax_img
-		width 100%
-		height 100%

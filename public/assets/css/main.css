@@ -178,11 +178,51 @@ td,
 th {
   padding: 0;
 }
-#menuButton-desktop {
-  display: none;
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon.eot");
+  src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"), url("../fonts/flaticon.woff") format("woff"), url("../fonts/flaticon.ttf") format("truetype"), url("../fonts/flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-.header -webkit-transition all .25s ease-in -moz-transition all .25s ease-in -ms-transition all .25s ease-in -o-transition all .25s ease-in {
-  transition: all 0.25s ease-in;
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 20px;
+}
+.flaticon-close:before {
+  content: "\e000";
+}
+.flaticon-facebook:before {
+  content: "\e001";
+}
+.flaticon-graduate:before {
+  content: "\e002";
+}
+.flaticon-linkedin:before {
+  content: "\e003";
+}
+.flaticon-man:before {
+  content: "\e004";
+}
+.flaticon-menu:before {
+  content: "\e005";
+}
+.flaticon-smart:before {
+  content: "\e006";
+}
+.flaticon-tools:before {
+  content: "\e007";
+}
+.flaticon-twitter:before {
+  content: "\e008";
+}
+.flaticon-white {
+  color: #fff;
 }
 .header_backgroundColor {
   background-color: #000;
@@ -192,9 +232,4 @@ th {
 }
 .parallax_marginTop {
   margin-top: -70px;
-}
-@media screen and (min-width: 768px) {
-  #menuButton-desktop {
-    display: block;
-  }
 }
