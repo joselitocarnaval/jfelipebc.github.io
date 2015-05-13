@@ -179,50 +179,38 @@ th {
   padding: 0;
 }
 @font-face {
-  font-family: "Flaticon";
-  src: url("../fonts/flaticon.eot");
-  src: url("../fonts/flaticon.eot#iefix") format("embedded-opentype"), url("../fonts/flaticon.woff") format("woff"), url("../fonts/flaticon.ttf") format("truetype"), url("../fonts/flaticon.svg") format("svg");
+  font-family: 'icofont';
+  src: url("../fonts/icofont.eot?-wourf8");
+  src: url("../fonts/icofont.eot?#iefix-wourf8") format('embedded-opentype'), url("../fonts/icofont.woff?-wourf8") format('woff'), url("../fonts/icofont.ttf?-wourf8") format('truetype'), url("../fonts/icofont.svg?-wourf8#icofont") format('svg');
   font-weight: normal;
   font-style: normal;
 }
-[class^="flaticon-"]:before,
-[class*=" flaticon-"]:before,
-[class^="flaticon-"]:after,
-[class*=" flaticon-"]:after {
-  font-family: Flaticon;
-  font-size: 20px;
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icofont';
+  speak: none;
   font-style: normal;
-  margin-left: 20px;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.flaticon-close:before {
-  content: "\e000";
+.icon-facebook:before {
+  content: "\ea8d";
 }
-.flaticon-facebook:before {
-  content: "\e001";
+.icon-instagram:before {
+  content: "\ea90";
 }
-.flaticon-graduate:before {
-  content: "\e002";
+.icon-twitter:before {
+  content: "\ea92";
 }
-.flaticon-linkedin:before {
-  content: "\e003";
+.icon-github:before {
+  content: "\eab1";
 }
-.flaticon-man:before {
-  content: "\e004";
-}
-.flaticon-menu:before {
-  content: "\e005";
-}
-.flaticon-smart:before {
-  content: "\e006";
-}
-.flaticon-tools:before {
-  content: "\e007";
-}
-.flaticon-twitter:before {
-  content: "\e008";
-}
-.flaticon-white {
-  color: #fff;
+.icon-linkedin:before {
+  content: "\eac8";
 }
 .header_backgroundColor {
   background-color: #000;
@@ -232,4 +220,59 @@ th {
 }
 .parallax_marginTop {
   margin-top: -70px;
+}
+.purple_background {
+  background-color: #414b82 !important;
+}
+/*Custom colors forms material design*/
+.input-field label {
+  color: #000;
+}
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=email]:focus + label {
+  color: #000;
+}
+.input-field input[type=email].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=email].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field textarea:focus {
+  border-bottom: 1px solid #000 !important;
+  box-shadow: 0 1px 0 0 #000 !important;
+}
+.input-field textarea:focus + label {
+  color: #000 !important;
+}
+.input-field textarea.valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field textarea.invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field .prefix.active {
+  color: #000;
 }

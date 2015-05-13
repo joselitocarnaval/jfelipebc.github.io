@@ -1,6 +1,7 @@
 @import 'normalize.styl'
 @import 'fonts.styl'
 
+base_color = #414B82
 
 .header_backgroundColor 
     background-color: black
@@ -11,8 +12,49 @@
 .parallax_marginTop
 	margin-top -70px
 
+.purple_background
+	background-color base_color !important
 
 
-
-
+/*Custom colors forms material design*/
+.input-field
+  label
+    color #000
+  input[type=text]:focus
+    border-bottom 1px solid #000
+    box-shadow 0 1px 0 0 #000
+    & + label
+      color #000
+  input[type=text].valid
+    border-bottom 1px solid #000
+    box-shadow 0 1px 0 0 #000
+  input[type=text].invalid
+    border-bottom 1px solid #000
+    box-shadow 0 1px 0 0 #000
+  input[type=email]:focus
+    border-bottom 1px solid #000
+    box-shadow 0 1px 0 0 #000
+    & + label
+      color #000
+  input[type=email].valid
+    border-bottom 1px solid #000
+    box-shadow 0 1px 0 0 #000
+  input[type=email].invalid
+    border-bottom 1px solid #000
+    box-shadow 0 1px 0 0 #000
+  textarea
+    &:focus
+       border-bottom 1px solid #000 !important
+       box-shadow 0 1px 0 0 #000 !important
+       & + label
+        color #000 !important
+    &.valid
+       border-bottom 1px solid #000
+       box-shadow 0 1px 0 0 #000
+    &.invalid
+       border-bottom 1px solid #000
+       box-shadow 0 1px 0 0 #000
+  .prefix
+    &.active
+      color #000
 

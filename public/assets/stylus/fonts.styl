@@ -1,39 +1,40 @@
-//fonts 
-@font-face 
-	font-family "Flaticon"
-	src url("../fonts/flaticon.eot")
-	src url("../fonts/flaticon.eot#iefix") format("embedded-opentype"),
-	url("../fonts/flaticon.woff") format("woff"),
-	url("../fonts/flaticon.ttf") format("truetype"),
-	url("../fonts/flaticon.svg") format("svg")
-	font-weight normal
-	font-style normal
+@font-face
+  font-family 'icofont'
+  src url('../fonts/icofont.eot?-wourf8')
+  src url('../fonts/icofont.eot?#iefix-wourf8') format('embedded-opentype'),
+ url('../fonts/icofont.woff?-wourf8') format('woff'),
+		url('../fonts/icofont.ttf?-wourf8') format('truetype'),
+		url('../fonts/icofont.svg?-wourf8#icofont') format('svg')
+  font-weight normal
+  font-style normal
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after    
-	font-family Flaticon
-	font-size 20px
-	font-style normal
-	margin-left 20px
+[class^="icon-"], [class*=" icon-"]
+  font-family 'icofont'
+  speak none
+  font-style normal
+  font-weight normal
+  font-variant normal
+  text-transform none
+  line-height 1
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
 
-.flaticon
-	&-close:before 
-		content "\e000"
-	&-facebook:before 
-		content "\e001"
-	&-graduate:before 
-		content "\e002"
-	&-linkedin:before 
-		content "\e003"
-	&-man:before 
-		content "\e004"
-	&-menu:before 
-		content "\e005"
-	&-smart:before 
-		content "\e006"
-	&-tools:before 
-		content "\e007"
-	&-twitter:before 
-		content "\e008"
-	&-white
-		color white
+.icon-facebook
+  &:before
+    content "\ea8d"
+
+.icon-instagram
+  &:before
+    content "\ea90"
+
+.icon-twitter
+  &:before
+    content "\ea92"
+
+.icon-github
+  &:before
+    content "\eab1"
+
+.icon-linkedin
+  &:before
+    content "\eac8"
