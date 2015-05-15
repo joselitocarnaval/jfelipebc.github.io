@@ -1,18 +1,23 @@
 (function(){
-	var $nav = $("nav");
-	$(window).scroll(scroll);
+
+	var $window = $(window);
+	$window.scroll(scroll); 
 	
-	function scroll(event){
-		var currentHeight = $(event.target).scrollTop(); 
-		
-		if(currentHeight == 0)
-		{
-			$nav.addClass("N/A transparent");
-			$nav.removeClass("grey darken-4");
+	function scroll(evt){
+		//Get the images 
+		var images = document.querySelectorAll(".icon-logo"); 
+		console.log(images.length);
+		if(images.length > 0){
+			$.each(images, displayImages);
 		}
-		else {
-			 $nav.addClass("grey darken-4");
-			 $nav.removeClass("N/A transparent");
-		} 
+	}
+	
+	function displayImages(index, item){
+		var $item = $(item);
+		var bottomWindow = $window.scrollTop() + $window.height(); 
+		var bottomImage = $item.offset().top + $item.outerHeight();
+		if(bottomWindow > bottomImage){
+			$item.animate({'opacity':'1'},500);
+		}
 	}
 })();
