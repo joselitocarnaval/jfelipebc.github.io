@@ -1,9 +1,27 @@
 (function(){
+	var $window 			= $(window), 
+	    $slider 			= $(".slider"), 
+	    $experienceSection 	= $("#experience"),
+	    $skillsSection 		= $("#skills"),
+	    $portfolioSection 	= $("#portfolio"), 
+	    $educationSection	= $("#education"), 
+	    $nav				= $("nav")
 
-	var $window = $(window);
 	$window.scroll(scroll); 
-	
+	//Set margin top experience section
+	$experienceSection.css("margin-top", $slider.outerHeight() - 60)
 	function scroll(evt){
+		if($window.scrollTop() > $experienceSection.offset().top)
+		{
+			$nav.addClass("teal darken-4")
+			$nav.removeClass("transparent")
+		}
+	 	else 
+		{
+			$nav.addClass("transparent")
+			$nav.removeClass("teal darken-4")
+		}
+
 		//Get the images 
 		var images = document.querySelectorAll(".icon-logo"); 
 		console.log(images.length);

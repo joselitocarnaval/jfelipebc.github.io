@@ -23,10 +23,9 @@
 		Para mejorar la experiencia..
 		</p>
 		<![endif]-->
-		<header class="header">
-			<div class="navbar-wrapper">
+		<header>
+			<div class="navbar-fixed">
 				<nav class="transparent">
-					  <!--Menu Desktop  id="menuButton-desktop"-->
 					  <a  href="#" data-activates="dekstop" class="hide-on-med-and-down right button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
 				      <ul id="dekstop" class="side-nav">
     					<li><a href="#about">About me</a></li>
@@ -35,8 +34,6 @@
 				        <li><a href="#education">Education</a></li>
 						<li><a href="#contact">Contact</a></li>
   					  </ul>
-  	
-   					  <!--Menu Mobile/tablet-->	
 					  <a href="#" data-activates="mobile" class="right button-collapse"><i class="mdi-navigation-menu"></i></a>
 				      <ul class="side-nav" id="mobile">
 				        <li><a href="#about">About me</a></li>
@@ -47,33 +44,29 @@
 				      </ul>
 				</nav>
 			</div>
+			<div class="slider fullscreen">
+				<ul class="slides">
+			      <li>
+			        <img src="assets/images/day.png">
+			        <div class="caption left-align">
+			          <h3>Juan Felipe Bedoya Cardona</h3>
+			          <h5 class="light grey-text text-lighten-3">
+			          	Parallax is an effect where the background content or image in this case,
+						  is moved at a different speed than the foreground content while scrolling.
+			          </h5>
+			        </div>
+			      </li>
+			    </ul>
+  			</div>
 		</header>
 		<main>
-			<div class="parallax-container parallax_marginTop">
-    			<div class="parallax"><img class="parallax_img" src="assets/images/day.png"></div>
-	  		</div>
-		    <div id="about" class="about section grey lighten-4">
-		    	<div class="row container">
-		      		<h2 class="header">About me</h2>
-		      		<p class="grey-text text-darken-3 lighten-3">
-						  Parallax is an effect where the background content or image in this case,
-						  is moved at a different speed than the foreground content while scrolling.
-						  Parallax is an effect where the background content or image in this case,
-						  is moved at a different speed than the foreground content while scrolling.
-						  Parallax is an effect where the background content or image in this case,
-						  is moved at a different speed than the foreground content while scrolling.
-						  Parallax is an effect where the background content or image in this case,
-						  is moved at a different speed than the foreground content while scrolling.
-					</p>
-	    		</div>
-		  	</div>
-			<div id="experience" class="section white panel">
+			<div id="experience" class="section panel">
 		    	<div class="row container">
 		      		<h2 class="header">Experience</h2>
 		      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    		</div>
 		  	</div>
-			<div id="skills" class="section grey lighten-4">
+			<div id="skills" class="section panel">
 		    	<div class="row container">
 		      		<h2 class="header">Skills</h2>
 						  <div class="row">
@@ -86,31 +79,32 @@
 							<div class="col s6 m4 l2"><img class="icon-logo opacity_off" src="assets/images/github-logo.png" width="120" height="120" alt="Github"></div>
 							<div class="col s6 m4 l2"><img class="icon-logo opacity_off" src="assets/images/gulp-logo.png" width="120" height="120" alt="Gulp"></div>
 							<div class="col s6 m4 l2"><img class="icon-logo opacity_off" src="assets/images/silverlight-logo.png" width="120" height="120" alt="Gulp"></div>
-							<div class="col s6 m4 l2"><img class="icon-logo opacity_off" src="assets/images/net-logo.png" width="120" height="120" alt="Gulp"></div>
-							<div class="col s6 m4 l2"><img class="icon-logo opacity_off" src="assets/images/kendoui-logo.png" width="120" height="120" alt="Gulp"></div>								
+							<div class="col s6 m4 l2"><img class="icon-logo opacity_off" src="assets/images/net-logo.png" width="120" height="120" alt="Visual Studio .NET"></div>
+							<div class="col s6 m4 l2"><img class="icon-logo opacity_off" src="assets/images/kendoui-logo.png" width="120" height="120" alt="Gulp"></div>		
+							<div class="col s6 m4 l2"><img class="icon-logo opacity_off" src="assets/images/sql-logo.png" width="120" height="120" alt="Sql Server"></div>		
 						  </div>
 		      		</div>
 		  	</div>
 			<div class="parallax-container">
 		    	<div class="parallax"><img src="assets/images/computer1.jpg"></div>
 		  	</div>
-			<div id="education" class="section white">
+			<div id="education" class="section panel">
 		    	<div class="row container">
 		      		<h2 class="header">Education</h2>
 		      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    		</div>
 		  	</div>
-			<div id="portfolio" class="section grey lighten-4">
+			<div id="portfolio" class="section panel">
 		    	<div class="row container">
 		      		<h2 class="header">Portfolio</h2>
 		      		<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    		</div>
 		  	</div>
-			<div class="parallax-container parallax_marginTop">
+			<div class="parallax-container">
     			<div class="parallax"><img class="parallax_img" src="assets/images/bottomNature.jpg"></div>
-	  		</div>  
+	  		</div> 
 		</main>
-		<footer class="page-footer teal lighten-2">
+		<footer class="page-footer teal darken-4">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -148,10 +142,6 @@
             </div>
           </div>
           <div class="footer-copyright center">
-            <!--<div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>-->
 			<a  href="https://co.linkedin.com/in/jfelipebc" target="_blank">
 				<i class="small icon-linkedin"></i>
 			</a>
@@ -176,7 +166,8 @@
 		<!-- endinject -->
 		<script>
 			$(document).on("ready", function(){
-				$('.parallax').parallax();
+				$(".slider").slider({full_width: true});
+				$(".parallax").parallax();
 				$(".button-collapse").sideNav({edge: 'right', closeOnClick: true });
 			});
 		</script>
