@@ -191,6 +191,9 @@ Main components
   display: table;
   clear: both;
 }
+.cd-timeline-title{
+  text-transform: uppercase;
+}
 
 .cd-timeline-title, .cd-timeline-subtitle {
   font-weight: 300; 
