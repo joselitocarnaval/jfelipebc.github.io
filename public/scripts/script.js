@@ -9,22 +9,22 @@
 
 	$window.scroll(scroll); 
 	//Set margin top experience section
-	$experienceSection.css("margin-top", $slider.outerHeight() - 60)
+	//$experienceSection.css("margin-top", $slider.outerHeight() - 60)
 	function scroll(evt){
 		if($window.scrollTop() > $experienceSection.offset().top)
 		{
-			$nav.addClass("teal darken-4")
+			$nav.addClass("blue lighten-1 color_transparent")
 			$nav.removeClass("transparent")
 		}
 	 	else 
 		{
 			$nav.addClass("transparent")
-			$nav.removeClass("teal darken-4")
+			$nav.removeClass("blue lighten-1")
+			$nav.removeClass("color_transparent")
 		}
 
 		//Get the images 
 		var images = document.querySelectorAll(".icon-logo"); 
-		console.log(images.length);
 		if(images.length > 0){
 			$.each(images, displayImages);
 		}

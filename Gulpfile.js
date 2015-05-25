@@ -34,7 +34,7 @@ gulp.task('wiredep', function(){
 });
 
 gulp.task('css', function(){
- 	gulp.src('public/assets/stylus/main.styl')
+ 	gulp.src(['public/assets/stylus/main.styl','public/assets/css/vertical-timeline.css'])
  		.pipe(stylus({ use: nib()}))
  		.pipe(gulp.dest('public/assets/css'))
 		.pipe(connect.reload());
@@ -49,7 +49,7 @@ gulp.task('html', function(){
 //watch changes and launches a task
 gulp.task('watch', function(){
 	gulp.watch(['public/**/*.html'], ['html']);
-	gulp.watch(['public/assets/**/*.styl'], ['css', 'inject']);
+	gulp.watch(['public/assets/**/*.styl', 'public/assets/css/vertical-timeline.css'], ['css', 'inject']);
 	gulp.watch(['public/scripts/*.js', 'Gulpfile.js'], ['inject']);
 	gulp.watch(['bower.json'], ['wiredep']);
 

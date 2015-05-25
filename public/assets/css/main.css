@@ -196,6 +196,7 @@ th {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #fff;
 }
 .icon-facebook:before {
   content: "\ea8d";
@@ -212,8 +213,62 @@ th {
 .icon-linkedin:before {
   content: "\eac8";
 }
+.icon-work:before {
+  content: "\e9ae";
+}
+.icon-education:before {
+  content: "\e9b2";
+}
+.icon-rss:before {
+  content: "\ea95";
+}
+.icon-youtube:before {
+  content: "\ea99";
+}
+.icon-vimeo:before {
+  content: "\ea9d";
+}
+.icon-flickr:before {
+  content: "\eaa2";
+}
+.icon-dropbox:before {
+  content: "\eaaf";
+}
+.icon-pinterest:before {
+  content: "\ead1";
+}
+.icon-chrome:before {
+  content: "\eae5";
+}
+.icon-firefox:before {
+  content: "\eae6";
+}
+.icon-IE:before {
+  content: "\eae7";
+}
+.icon-opera:before {
+  content: "\eae8";
+}
+.icon-safari:before {
+  content: "\eae9";
+}
+body {
+  font-size: 16px;
+}
+h2 {
+  font-size: 1em !important;
+}
+.content-icon {
+  color: #fff;
+}
+.center-icon-timeline {
+  padding-top: 8px;
+}
 .header_backgroundColor {
   background-color: #000;
+}
+.color_transparent {
+  opacity: 0.5;
 }
 .nav_borderBottom {
   border-bottom: 1px solid #fff;
@@ -221,15 +276,15 @@ th {
 .parallax_marginTop {
   margin-top: -70px;
 }
-.purple_background {
-  background-color: #414b82 !important;
-}
 .opacity_off {
   opacity: 0;
 }
 /*Custom material design*/
 footer.page-footer {
   margin-top: 0;
+}
+.mdi-action-work {
+  color: #fff;
 }
 .input-field label {
   color: #fff;
@@ -286,5 +341,8 @@ footer.page-footer {
   .icon-logo {
     width: 100%;
     height: 100%;
+  }
+  .header_title {
+    font-size: 2em;
   }
 }
